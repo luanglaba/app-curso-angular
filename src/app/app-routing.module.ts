@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
 import { AboutComponent } from './components/pages/about/about.component';
 import { HomeComponent } from './components/pages/home/home.component';
+import { MomentComponent } from './components/pages/moment/moment.component';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent},
   {path: 'moments/new', component: NewMomentComponent},
   {path: 'moment-form', component: MomentFormComponent},
+  {path: 'moments/:id', component: MomentComponent},
 ];
 
 @NgModule({
